@@ -73,8 +73,6 @@ img {
 .header {
   background-color: var(--primary-background-color);
   border-bottom: 1px solid #ececec;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 .header .container {
   display: flex;
@@ -82,6 +80,9 @@ img {
 }
 .logo.header {
   margin-right: 93px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border: none;
 }
 .link {
   color: var(--alternative-text-color);
@@ -107,9 +108,16 @@ img {
 }
 .site-nav.item {
   margin-right: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.site-nav.item:last-child {
+  margin-right: 0px;
 }
 .auth-nav {
   margin-left: auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .auth-nav .auth-link:hover,
 .auth-nav .auth-link:focus {
@@ -259,13 +267,14 @@ img {
   color: var(--accent-color);
 }
 .item-address {
-  padding-top: 20px;
+  margin-top: 20px;
+  margin-bottom: 9px;
 }
 .item-nav {
-  padding-top: 9px;
+  margin-bottom: 9px;
 }
-.item-nav + .item-nav {
-  padding-bottom: 60px;
+.item-nav:last-child {
+  margin-bottom: 0px;
 }
 /*Портфолио*/
 .portfolio-title {
@@ -321,8 +330,7 @@ img {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  padding-top: 20px;
-  padding-bottom: 4px;
+  margin-bottom: 4px;
 }
 .portfolio-list .ptext {
   font-size: 16px;
